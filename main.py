@@ -12,10 +12,10 @@ except IndexError or AssertionError:
 
 if sys.argv[1].lower() == "cli":
     while True:
-        os.system("clear")
         print("{day} Days {hour} Hours {min} Minutes and {sec} Seconds".format(**count_down(bangkok_zone)),end="\r")
 elif sys.argv[1].lower() == "web":
-    os.system('flask run')
+    from app import app
+    app.run('0.0.0.0',80,debug=True)
 else:
     print("Please specify the mode: cli or web")
     exit(1)

@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, jsonify, render_template, request, send_from_directory
 
 from utils import count_down, new_year, bangkok_zone
 
@@ -18,6 +18,9 @@ def lapse():
     else:
         return jsonify(count_down(tz))
 
+@app.route("/favicon.ico")
+def favicon():
+    return send_from_directory("static\\images\\favicon.ico")
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(port=80,debug=True)
