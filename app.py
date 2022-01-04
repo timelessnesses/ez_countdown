@@ -20,7 +20,7 @@ def lapse():
 
 @app.route("/favicon.ico")
 def favicon():
-    return send_from_directory("static\\images\\favicon.ico")
+    return send_from_directory("static\\images\\","favicon.ico")
 
 if __name__ == "__main__":
     app.run(port=80,debug=True)
