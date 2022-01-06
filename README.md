@@ -6,3 +6,5 @@ Worth knowing that you needed to edit timezone for your country by editing `bang
 ## Features
 Webserver with countdown  
 CLI with countdown
+## Disclaimer
+im retarded to use websocket but who care
