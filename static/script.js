@@ -17,5 +17,5 @@ function Countdown() {
     };
 };
 window.onload = function() {
-    setInterval(Countdown, 100);
+    setInterval(Countdown, 1000);
 };

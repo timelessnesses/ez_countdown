@@ -6,9 +6,7 @@ new_year = datetime.now().year + 1
 bangkok_zone = "Asia/Bangkok"
 
 
-def count_down(tz: timezone) -> tuple:
-    """ Function return days and time to next new year """
-
+def count_down(tz: timezone):
     tz = timezone(tz)
     new_year = datetime(datetime.now(tz).year + 1, 1, 1)
     today = datetime.now(tz)
