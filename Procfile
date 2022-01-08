@@ -1,1 +1,1 @@
-web: sudo flask run --port 80
+web: gunicorn wsgi:app
